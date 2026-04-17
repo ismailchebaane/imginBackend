@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: imagn-spring
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: mongodb+srv://chebaaneismail_db_user:GOpkmjf1fKU40gWO@imagin.ygkaqey.mongodb.net/imagn?retryWrites=true&w=majority&appName=imagin
+      auto-index-creation: true
+
+server:
+  port: 8080
+
+jwt:
+  secret: ${JWT_SECRET:mySecretKeyForImagnApplication2024SecureKey12345}
+  expiration: 86400000 # 24 hours in milliseconds
+
+python:
+  service:
+    url: ${PYTHON_SERVICE_URL:https://imginmodels.onrender.com}
+
+cors:
+  allowed-origins: ${CORS_ORIGINS:https://imagin.netlify.app}

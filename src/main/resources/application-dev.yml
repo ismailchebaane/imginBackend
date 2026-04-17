@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://chebaaneismail_db_user:GOpkmjf1fKU40gWO@imagin.ygkaqey.mongodb.net/imagn?retryWrites=true&w=majority&appName=imagin
+
+logging:
+  level:
+    org.springframework.data.mongodb: DEBUG
+    com.imagn.Backend: DEBUG
